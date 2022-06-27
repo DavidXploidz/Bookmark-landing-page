@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --fuenteParrafos: 'Rubik', sans-serif;
+    --GrayishBlue: hsl(229, 8%, 60%);
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    font-family: var(--fuenteParrafos);
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+/** Globales **/
+.contenedor{
+    max-width: 375px;
+    width: 95%;
+    margin: 0 auto;
+}
+@media (min-width: 768px  ) {
+    .contenedor{
+        max-width: 1440px;
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+.contenedor-chico{
+    max-width: 90rem;
+    width: 95%;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+h1, h2, h3, h4{
+    line-height: 1.2;
+}
+
+img{
+    max-width: 100%;
+}
+/*Header Component*/
+.menu-oculto {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    background-color: rgba(37, 43, 70, 0.9);
+}
+
+.heroIMG{
+    height: 30rem;
+    width: 38rem;
+
+}
+@media (min-width: 768px) {
+    .heroIMG{
+        height: 50rem;
+        width: 100rem;
+    }
+}
+.respuesta-oculta{
+    color: var(--GrayishBlue);
+    text-align: left;
+    line-height: 2;
+    font-size: 1.6rem;
+    margin-bottom: -100%;
+}
